@@ -1,0 +1,91 @@
+/* General frame styling */
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Calculator styling */
+  .calculator {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Input fields and buttons container */
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  /* Button styling */
+  .button {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Button hover effect */
+  .button:hover {
+    background-color: #d0d0d0;
+  }
+  
+  /* Clear button styling */
+  .button.clear {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .button.clear:hover {
+    background-color: #e53935;
+  }
+  
+  /* Delete button styling */
+  .button.delete {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .button.delete:hover {
+    background-color: #fb8c00;
+  }
+  
+  /* Operator buttons styling */
+  .button.operator {
+    background-color: #e5f321;
+    color: white;
+  }
+  
+  .button.operator:hover {
+    background-color: #1e88e5;
+  } 
+  
+  /* Ensure numbers and other buttons have consistent sizing */
+  .button:not(.operator):not(.clear):not(.delete) {
+    background-color: #e0e0e0;
+  }
+  
+  /* Grid layout for responsive design */
+  .calculator img {
+    max-width: 80px;
+    margin-bottom: 10px;
+  }
+  
